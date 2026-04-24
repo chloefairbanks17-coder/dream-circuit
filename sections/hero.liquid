@@ -1,0 +1,20 @@
+<section class="hero" style="position:relative; min-height:90vh; overflow:hidden;">
+  <!-- Background Galaxy Effects: stars, bubbles, moons, and circuits -->
+  {% for i in (1..20) %}
+    <div class="bg-star" style="top:{{ 10 | times: i | modulo: 80 }}vh; left:{{ 5 | times: i | modulo: 95 }}vw;"></div>
+    {% if i < 7 %}
+      <div class="bg-moon" style="top:{{ 13 | times: i | modulo: 65 }}vh; left:{{ 27 | times: i | modulo: 80 }}vw;"></div>
+    {% endif %}
+    <div class="bg-bubble" style="top:{{ 8 | times: i | modulo: 100 }}vh; left:{{ 14 | times: i | modulo: 90 }}vw; width:{{ 30 | plus: 7*i }}px; height:{{ 30 | plus: 3*i }}px;"></div>
+    {% if i < 8 %}
+      <div class="bg-circuit" style="top:{{ 8 | times: i | modulo: 100 }}vh; left: -10vw; width:{{ 48 | plus: 11*i }}vw; animation-delay: -{{ 2*i }}s;"></div>
+    {% endif %}
+  {% endfor %}
+
+  <!-- Hero Content -->
+  <div style="position:relative; z-index:1; display:flex; flex-direction:column; justify-content:center; align-items:center; min-height:60vh;">
+    <h1 style="font-size:3.2rem; margin:1rem 0 .5rem; line-height:1; text-shadow:0 4px 48px #fff9,0 2px 8px #1a153f88;">Dream Circuit</h1>
+    <h2 style="color:#9cfaf8; font-size:1.4rem; margin-bottom:2.1rem;">A pastel galaxy world with bubbles & retro iOS vibes</h2>
+    <a href="#shop" class="button-bubble">Shop Now</a>
+  </div>
+</section>
