@@ -1,0 +1,106 @@
+/* Galaxy Pastel Background, Animations, and Bubble UI Theme */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+body {
+  background: radial-gradient(ellipse at bottom right, #1a153f 58%, #9cfaf8 130%),
+    linear-gradient(120deg, #c7aef7 0%, #fae3fa 100%);
+  font-family: 'Fredoka', sans-serif;
+  color: #1a153f;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Bubble font for all headings & accents */
+h1, h2, .bubble-text {
+  font-family: 'Fredoka', 'Bubblegum Sans', cursive, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+/* Animated Stars */
+.bg-star {
+  position: absolute;
+  border-radius: 50%;
+  width: 8px; height: 8px;
+  background: #fffbe8;
+  opacity: .85;
+  box-shadow: 0 0 6px #fff, 0 0 12px #c7aef7;
+  animation: starTwinkle 2.3s ease-in-out infinite alternate;
+}
+@keyframes starTwinkle {
+  0% { opacity: 0.5; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.35) rotate(-10deg); }
+}
+
+/* Animated Moons */
+.bg-moon {
+  position: absolute;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(120deg, #fae3fa 30%, #e5ecf5 100%);
+  box-shadow: 0 0 28px #9cfaf8a1, 4px 4px 32px #c7aef78a;
+  opacity: 0.77;
+}
+
+/* Pastel Galaxy Bubbles */
+.bg-bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(125deg, #fae3fa 55%, #c7aef7 100%);
+  box-shadow:
+    0 2px 8px 1px #e5ecf588,
+    0 1.5px 12px 2px #9cfaf89a,
+    0 0px 18px 2px #fff4;
+  opacity: 0.30;
+  animation: bubbleFloat 7.3s ease-in-out infinite alternate;
+  filter: blur(0.2px);
+}
+@keyframes bubbleFloat {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-36px) scale(1.06); }
+}
+
+/* Holographic Pastel Circuit Lines */
+.bg-circuit {
+  position: absolute;
+  height: 2.5px;
+  border-radius: 1.6px;
+  background:
+    linear-gradient(92deg, #c7aef7 0%, #9cfaf8 23%, #fae3fa 66%, #c7aef7 100%);
+  box-shadow: 0 0px 20px #c7aef77c, 0 0px 36px #fff3;
+  opacity: 0.68;
+  animation: circuitMove 19s linear infinite;
+}
+@keyframes circuitMove {
+  0%   { left: -100vw; opacity: .7; }
+  90%  { left: 100vw; opacity: 0.56; }
+  100% { left: 115vw; opacity: 0; }
+}
+
+/* 3D Bubble (Retro iOS) Buttons */
+.button-bubble {
+  background: linear-gradient(135deg, #c7aef7 15%, #9cfaf8 100%);
+  color: #1a153f;
+  border: none;
+  border-radius: 42px;
+  box-shadow:
+    0 2px 14px 0 #c7aef799,
+    0 2.5px 16px 3px #fae3fab0,
+    0 6px 0 #fff3 inset;
+  font-family: 'Fredoka', 'Bubblegum Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  padding: 1.08em 2.2em;
+  position: relative;
+  transition: box-shadow 0.23s, background 0.28s;
+  text-shadow: 0 2px 14px #fff7;
+  margin: 18px 0 22px 0;
+}
+.button-bubble:hover {
+  box-shadow:
+    0 4px 22px 2px #9cfaf88b,
+    0 2px 20px 4px #c7aef788,
+    0 8px 0 #fff6 inset;
+  background: linear-gradient(110deg, #fae3fa, #c7aef7 92%);
+  color: #38248a;
+}
