@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Theme settings",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#f4f5fa"
+      },
+      {
+        "type": "text",
+        "id": "brand_font",
+        "label": "Font family",
+        "default": "Fredoka, Arial, sans-serif"
+      }
+    ]
+  }
+]
