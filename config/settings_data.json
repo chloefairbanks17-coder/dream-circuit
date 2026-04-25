@@ -1,0 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "content_for_index": []
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".hero-copy h1{background:linear-gradient(135deg,#fff,#9ff8ff 45%,#ffb7df);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}",
+      ".hero-copy__lead{max-width:56ch;color:#d7e6ff}",
+      ".glass-panel{background:linear-gradient(180deg,rgba(20,30,54,.78),rgba(10,16,30,.58));border:1px solid rgba(255,255,255,.14)}",
+      ".button-bubble{border:1px solid rgba(255,255,255,.3);box-shadow:0 18px 40px rgba(126,242,255,.22)}",
+      ".button-bubble:hover{transform:translateY(-3px);box-shadow:0 24px 50px rgba(255,143,207,.22)}",
+      ".feature-card,.product-card{transition:transform .2s,border-color .2s}",
+      ".feature-card:hover,.product-card:hover{transform:translateY(-6px);border-color:rgba(126,242,255,.35)}",
+      ".product-card__price{color:#9ff8ff}",
+      ".product-card__eyebrow,.feature-card__index,.timeline-step__label,.hero-card__label{color:#ffb7df}",
+      ".shop-banner{padding:1.5rem;border:1px solid rgba(255,255,255,.1);border-radius:28px;background:linear-gradient(135deg,rgba(126,242,255,.08),rgba(255,143,207,.08))}"
+    ]
+  }
+}
