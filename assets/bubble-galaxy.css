@@ -1,5 +1,4 @@
 /* Galaxy Pastel Background, Animations, and Bubble UI Theme */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
 
 body {
   background: radial-gradient(ellipse at bottom right, #1a153f 58%, #9cfaf8 130%),
@@ -12,7 +11,7 @@ body {
 
 /* Bubble font for all headings & accents */
 h1, h2, .bubble-text {
-  font-family: 'Fredoka', 'Bubblegum Sans', cursive, sans-serif;
+  font-family: 'Fredoka', sans-serif;
   letter-spacing: 1.5px;
 }
 
@@ -86,7 +85,7 @@ h1, h2, .bubble-text {
     0 2px 14px 0 #c7aef799,
     0 2.5px 16px 3px #fae3fab0,
     0 6px 0 #fff3 inset;
-  font-family: 'Fredoka', 'Bubblegum Sans', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 1.3px;
